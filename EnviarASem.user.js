@@ -2,8 +2,8 @@
 // @name         EnviarASEM
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @updateURL    https://github.com/soporte-infra-cespi/tampermonkey-send-to-orion/raw/main/EnviarASEM.user.js
-// @downloadURL  https://github.com/soporte-infra-cespi/tampermonkey-send-to-orion/raw/main/EnviarASEM.user.js
+// @updateURL    https://github.com/soporte-infra-cespi/enviar-a-sem/raw/main/EnviarASem.user.js
+// @downloadURL  https://github.com/soporte-infra-cespi/enviar-a-sem/raw/main/EnviarASem.user.js
 // @description  Agrega un botón a la consulta del DNRPA para enviar la info a Orion
 // @author       CeSPI
 // @match        https://sistemas.dnrpa.gov.ar/consultaintegral/consultaGral.php
