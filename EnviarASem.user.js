@@ -4,7 +4,7 @@
 // @version      0.1
 // @updateURL    https://github.com/soporte-infra-cespi/enviar-a-sem/raw/main/EnviarASem.user.js
 // @downloadURL  https://github.com/soporte-infra-cespi/enviar-a-sem/raw/main/EnviarASem.user.js
-// @description  Agrega un botón a la consulta del DNRPA para enviar la info a Orion
+// @description  Agrega un botón a la consulta del DNRPA para enviar la info a SEM
 // @author       CeSPI
 // @match        https://sistemas.dnrpa.gov.ar/consultaintegral/consultaGral.php
 // @grant        none
@@ -150,7 +150,7 @@ function gatherResults() {
 }
 
 // sends the data to the server
-function sendDataToOrion(e) {
+function sendDataToSEM(e) {
     e.preventDefault();
 
     // show info
@@ -202,7 +202,7 @@ function constructButton() {
     let sendBtn = document.createElement("button");
     sendBtn.id = "sem_send_btn";
     sendBtn.innerHTML = BUTTON_TEXT;
-    sendBtn.onclick = sendDataToOrion;
+    sendBtn.onclick = sendDataToSEM;
 	sendBtn.style.color = '#161D5A';
 	sendBtn.style["background-color"] = '#2ED366';
 	sendBtn.style["font-size"] = '20px';
