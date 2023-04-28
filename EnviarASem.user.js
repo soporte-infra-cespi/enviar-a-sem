@@ -16,7 +16,7 @@ const OTHER_DATA_SECTION = "consulta_seleccion_3";
 const BUTTON_TEXT = "Visualizar información";
 const ANIMATION_DELAY = 300;
 
-const FETCH_URI = '';
+const FETCH_URI = 'https://jorion.dat.cespi.unlp.edu.ar/vehicledata/dnrpasave';
 const FETCH_METHOD = 'POST';
 let GLOBAL_IS_WAITING = false;
 
