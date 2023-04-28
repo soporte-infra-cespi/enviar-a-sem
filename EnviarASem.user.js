@@ -163,7 +163,8 @@ function sendDataToSEM(e) {
     fetch(FETCH_URI, {
         method: FETCH_METHOD,
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+			"Authorization": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiJ9.fKisu-ym5xiOlP8vH8q4PgVWBPZg3Khz6nRWc_lN8d_Kp6wZHQlK5yPQ7qJh7iUysLtgtMdJnSGiBwylWUHAFg"
         },
         body: JSON.stringify(resultsJSON)
     })
@@ -186,6 +187,9 @@ function animateWaitingSpan() {
 }
 
 function toggle() {
+	// disable toggling
+	return;
+
     GLOBAL_IS_WAITING = !GLOBAL_IS_WAITING;
     if (GLOBAL_IS_WAITING) {
         document.getElementById("sem_send_btn").disabled = true;
