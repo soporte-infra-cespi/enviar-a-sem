@@ -157,6 +157,7 @@ function sendDataToSEM(e) {
     toggleInfo(true);
 
     const resultsJSON = gatherResults();
+	resultsJSON.token = "2400102693125accb4902d49fc264a72257e7c6e6141e026f384e1f4541a4dad";
 
     toggle();
 
@@ -164,7 +165,6 @@ function sendDataToSEM(e) {
         method: FETCH_METHOD,
         headers: {
             "Content-Type": "application/json",
-			"Authorization": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiJ9.fKisu-ym5xiOlP8vH8q4PgVWBPZg3Khz6nRWc_lN8d_Kp6wZHQlK5yPQ7qJh7iUysLtgtMdJnSGiBwylWUHAFg"
         },
         body: JSON.stringify(resultsJSON)
     })
