@@ -168,7 +168,7 @@ function sendDataToSEM(e) {
         },
         body: JSON.stringify(resultsJSON)
     })
-        .then(() => {console.log("Exito"); toggle(); console.log("Datos enviados con exito a SEM.")})
+        .then(() => {console.log("Exito"); toggle(); console.log("Datos enviados con exito a SEM."); document.getElementById("sem_send_btn").style.display = 'none';})
         .catch((e) => { console.error("error enviando a sem", e); toggle(); console.log("Ocurrio un error enviando los datos a SEM"); });
 }
 
@@ -246,3 +246,4 @@ function toggleInfo(show) {
         toggleInfo(false);
     }
 })();
+
